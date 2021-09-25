@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TODO List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <style>
+        body{
+            /* background-color: aquamarine; */
+            background-image: url(/images/main.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            /* height: 570px; */
+        }
+        h1{
+            /* margin: 130px; */
+            margin-top: 100px;
+            color: white;
+            font-size: 50px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            font-weight: bold;
+            font-style: oblique;
+        }
+        img{
+            margin-top: 10px;
+        }
+        #submit{
+            /* margin: 2px; */
+            border: 10px;
+            background-color:coral;
+             border: none;
+            color: white;
+             padding: 16px 32px;
+             text-decoration: none;
+             margin: 20px;
+             cursor: pointer;
+        }
+        th, td, p, input, h3 {
+            font:15px 'Segoe UI';
+        }
+        table, th, td {
+            width: 1000px;
+            background-color: white;
+            color:black;
+            border: solid 1px #ddd;
+            border-collapse: collapse;
+            padding: 2px 3px;
+            text-align: center;
+        }
+        th {
+            height: 60px;
+            background-color:black;
+            color: white;
+            font-weight:bold;
+        }
+
+        .container{
+          width: 600px;
+          margin-top: 10px;
+          /* margin-left: 350px; */
+          text-align:justify;
+          padding: 50px;
+          /* border: 2px solid black;
+          float: center; */
+        }
+
+        * {
+  box-sizing: border-box;
+}
+
+        @media only screen and (max-width:800px) {
+  /* For tablets: */
+  .main {
+    width: 80%;
+    padding: 0;
+  }
+  * {
+    width: 100%;
+  }
+}
+@media only screen and (max-width:500px) {
+  /* For mobile phones: */
+  *{
+    width: 100%;
+  }
+}
+
+    </style>
+</head>
+<body>
+
+    <center>
+    <input id="submit" type='button' onclick='tableFromJson()' 
+    	value='Click to view list' />
+        <input id="submit" type='button' onclick='logout()'
+    	value='Logout' />
+        
+    <p id='showData'></p>
+    
+    <p id='msg'></p>
+</center>
+<div class="container">
+
+</div>
+
+<script src="JS/main.js"></script>
+    
+
+</body>
+
+
+</html>

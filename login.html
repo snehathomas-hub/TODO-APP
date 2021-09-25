@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TODO LOGIN</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/CSS/loginstyle.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<center>
+  <h2 id="head1">TODO APP</h2>
+<div class="col">
+<div class="container">
+    <img src="images/todo1.jpg" alt="Snow">
+    <button onclick="document.getElementById('id01').style.display='block'"  id="submit1" class="btn">Login</button>
+  </div>
+</div>
+</center>
+
+
+<!-- <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button> -->
+
+<div id="id01" class="modal">
+  
+  <div class="modal-content animate">      
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" >&times;</span>
+      <!-- <img src="images/back.jpg" alt="Avatar" class="avatar"> -->
+    </div>
+
+    <div class="container">
+      <!-- <label for="uname"><b>Username</b></label> -->
+      <input type="text" placeholder="Enter Username" id="uname" name="uname" required>
+      <br> <br>
+
+      <!-- <label for="psw"><b>Password</b></label> -->
+      <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+      <br>
+      <br>
+        
+      <button id="login" onclick="validate(check)">Login</button>
+    </div>
+   </div> 
+    
+   <!-- above form -->
+</div>
+
+
+
+<script defer src="JS/login.js "></script>
+
+</body>
+</html>
