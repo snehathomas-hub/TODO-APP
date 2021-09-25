@@ -10,7 +10,7 @@ function check(){
         return false;
 }
     else{
-    window.location.href = 'login.html';
+    window.location.href = 'index.html';
     return false;
     }
 }
